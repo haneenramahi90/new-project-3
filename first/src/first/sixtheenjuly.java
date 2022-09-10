@@ -1,0 +1,29 @@
+package first;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class sixtheenjuly {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\chrome driver\\chromedriver.exe")    ;
+		WebDriver driver = new ChromeDriver() ;
+		
+		driver.get("https://stage.dadan.io/signIn");
+		driver.navigate().to("https://www.google.com");
+		
+		
+		for (int= i ; i<10 ; i++) {
+			
+			driver.get("https://stage.dadan.io/signIn");
+			driver.navigate().to("https://www.google.com");
+			driver.navigate().back();
+			driver.navigate().forward();
+			
+			
+		}
+		
+	}
+
+}

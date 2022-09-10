@@ -1,0 +1,46 @@
+package first;
+
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class testnew {
+
+	public testnew() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\chrome driver\\chromedriver.exe")    ;
+		WebDriver driver = new ChromeDriver() ;
+		
+		driver.get("https://stage.dadan.io/signIn");
+		//driver.findElement(By.linkText("Forgot password?")).getText();
+		//driver.findElement(By.linkText("Forgot password?")).click();
+		//driver.findElement(By.tagName("input")).sendKeys("hiiii");
+		
+//List<WebElement>a = driver.findElements(By.tagName("input"))	;
+//List<int> numbers = [5,6,9]; array 
+
+//for (int i=0; i< a.size(); i++) {
+	//a.get(i).sendKeys("hi");
+		
+		
+		
+	driver.findElement(By.xpath("//input[@placholder= 'yourname@yourmail.com']")).sendKeys("hi");
+	driver.findElement(By.xpath("//input[@placholder= 'enter your password']")).sendKeys("h kefkom");
+
+	
+		
+		
+}
+	}
+
+
